@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ethan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-bg': '#0f0f23',
+                        'dark-card': '#1a1a2e',
+                        'dark-border': '#16213e',
+                        'purple-accent': '#8b5cf6',
+                        'purple-light': '#a78bfa',
+                        'text-muted': '#94a3b8'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-white font-sans">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-dark-bg/90 backdrop-blur-lg border-b border-dark-border">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold text-white">
+                    Portfolio - Ethan
+                </div>
+                <div class="flex space-x-8">
+                    <a href="#home" class="text-text-muted hover:text-purple-accent transition-colors duration-300">Home</a>
+                    <a href="#about" class="text-text-muted hover:text-purple-accent transition-colors duration-300">About</a>
+                    <a href="#work" class="text-text-muted hover:text-purple-accent transition-colors duration-300">Work</a>
+                    <a href="#contact" class="text-text-muted hover:text-purple-accent transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center px-6 pt-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-7xl font-bold mb-6">
+                Hey, I'm <span class="text-purple-accent">Ethan</span>
+            </h1>
+            <p class="text-2xl text-text-muted mb-8 leading-relaxed">
+                Full Stack Developer & Creative Problem Solver
+            </p>
+            <p class="text-lg text-text-muted max-w-2xl mx-auto mb-10 leading-relaxed">
+                I craft digital experiences with modern technologies and thoughtful design. 
+                Passionate about creating clean, efficient, and user-friendly applications.
+            </p>
+            <a href="#work" class="inline-flex items-center px-8 py-3 bg-purple-accent hover:bg-purple-light text-white font-medium rounded-lg transition-colors duration-300">
+                View My Work
+                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">
+                About <span class="text-purple-accent">Me</span>
+            </h2>
+            <div class="grid grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-text-muted mb-6 leading-relaxed">
+                        I'm a passionate developer with a love for creating beautiful and functional digital experiences. 
+                        With expertise in modern web technologies, I enjoy turning complex problems into simple, elegant solutions.
+                    </p>
+                    <p class="text-lg text-text-muted mb-6 leading-relaxed">
+                        When I'm not coding, you can find me exploring new technologies, learning cybersecurity, 
+                        or training for my SSBU E-sports competitions.
+                    </p>
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-white mb-4">Technologies I work with:</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-dark-card border border-dark-border rounded-lg text-sm">TypeScript</span>
+                            <span class="px-4 py-2 bg-dark-card border border-dark-border rounded-lg text-sm">ThreeJS</span>
+                            <span class="px-4 py-2 bg-dark-card border border-dark-border rounded-lg text-sm">Python</span>
+                            <span class="px-4 py-2 bg-dark-card border border-dark-border rounded-lg text-sm">PHP</span>
+                            <span class="px-4 py-2 bg-dark-card border border-dark-border rounded-lg text-sm">Tailwind CSS</span>
+                            <span class="px-4 py-2 bg-dark-card border border-dark-border rounded-lg text-sm">Sass</span>
+                            <span class="px-4 py-2 bg-dark-card border border-dark-border rounded-lg text-sm">Vite</span>
+                            <span class="px-4 py-2 bg-dark-card border border-dark-border rounded-lg text-sm">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-80 bg-dark-card border border-dark-border rounded-xl overflow-hidden">
+                        <img src="photo2.jpg" alt="photo" class="w-full h-full object-contain antialiased">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-20 px-6 bg-dark-card/30">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">
+                My <span class="text-purple-accent">Work</span>
+            </h2>
+            <div class="grid grid-cols-2 gap-8">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
